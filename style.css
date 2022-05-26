@@ -1,0 +1,66 @@
+.container{
+	width: 75%;
+	margin: auto;
+	position: relative;
+
+}
+
+.fade{
+	animation: fade 1.5s ease;
+}
+@keyframes fade{
+	from{
+		opacity: 0.8;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+#prev{
+	position: absolute;
+	font-size: 1rem;
+	padding: 10px;
+	top: 40%;
+	color: white;
+	transition: 0.5s ease;
+	cursor: pointer;
+	user-select: none;
+}
+#next{
+	position: absolute;
+	font-size: 1rem;
+	padding: 10px;
+	top: 40%;
+	right: 0;
+	color: white;
+	cursor: pointer;
+	transition: 0.5s ease;
+	user-select: none;
+}
+
+#prev:hover, #next:hover{
+	background-color: black;
+	opacity: 0.6;
+}
+.dots{
+	text-align: center;
+	margin: 5px;
+}
+.dot{
+	width: 15px;
+	height: 15px;
+	margin: 1%;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: grey;
+}
+.active{
+	background-color: black;
+}
+
+@media screen and (max-width: 768px){
+	.container{
+		width: 95%;
+	}
+}
